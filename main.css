@@ -954,13 +954,56 @@ footer {
     /*Section Services */
     .flexbox-services {
         display: flex;
+        padding-top: 5%;
+    }
+    .img-mobile {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 74%;
+        height: 248px;
+    }
+    .img-services .h2-services {
+        margin-top: 20px;
+    }
+    .img-services p {
+        padding-right: 33px;
+        padding-left: 60px;
+    }
+    .start-button a {
+        padding: 10px 35px;
     }
     .flexbox-testimonials {
         display: flex;
         flex-wrap: wrap;
     }
+    .centralize-container h3 {
+        font: 700 30px 'Nunito', sans-serif;
+        text-transform: uppercase;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    .person-testimonial {
+        font: 300 16px 'Nunito', sans-serif;
+        margin-bottom: 8px;
+        padding: 6px;
+        width: 332px;
+    }
     .person-img {
         width: 50%;
+    }
+    .centralize-container h3 {
+        padding-left: 8px;
+    }
+    .posts a {
+        padding: 10px 30px;
+    }
+    .more-content img {
+        width: 80%;
+    }
+    .txt-content {
+        margin-top: 10px;
+        height: 100px;
+        width: 274px;
     }
     /*section additional-info */
     .flexbox-additional {
