@@ -692,8 +692,8 @@ input[type='submit'] {
 }
 
 input[type='submit']:hover {
-    color: #37e7;
-    background-color: #fff;
+    color: #fff;
+    background-color: #419488;
 }
 
 .img-content {
@@ -937,6 +937,10 @@ footer {
     .first-button {
         align-self: baseline;
     }
+    .first-button :hover {
+        color: #fff;
+        background-color: #419488;
+    }
     /*Menu*/
     #mobile-main {
         display: none;
@@ -971,6 +975,9 @@ footer {
     }
     .start-button a {
         padding: 10px 35px;
+    }
+    .start-button :hover {
+        background-color: #419488;
     }
     /* Section Testimonials */
     .flexbox-testimonials {
@@ -1014,10 +1021,11 @@ footer {
         margin-bottom: 60px;
     }
     .link-posts {
-        margin-top: 70px;
-        margin-bottom: 50px;
         text-align: center;
         margin-right: 7%;
+    }
+    .link-posts :hover {
+        color: #419488;
     }
     /*Section Cursos */
     .flexbox-cursos {
@@ -1088,6 +1096,9 @@ footer {
     }
     .cursos-button a {
         padding: 10px 32px;
+    }
+    .cursos-button :hover {
+        background-color: #ff4081;
     }
     /*Section Curso */
     .flexbox-curso {
@@ -1231,18 +1242,21 @@ footer {
         display: flex;
         margin-top: 5%;
     }
-    /*
-    .img-services {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 10px;
-    }*/
+    .img-post h2 {
+        color: hsla(340, 100%, 63%, 1);
+        font: 700 23px 'Ubuntu', sans-serif;
+        margin-top: 45px;
+        margin-bottom: 23px;
+    }
+    #post .imagem-mobile {
+        height: 50%;
+    }
+    .start-button-post :hover {
+        background-color: #419488;
+    }
     /*Section Contato*/
     .forms {
-        padding-top: 5px;
+        padding-top: 5%;
         display: flex;
         flex-wrap: wrap;
     }
