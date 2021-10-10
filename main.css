@@ -154,8 +154,8 @@ header {
     width: 80%;
     margin: 0 auto;
 }
-
-
+  
+  
 /* Section Header */
 
 .flexbox-header {
@@ -638,6 +638,7 @@ header {
 }
 
 
+
 /*Section Contato*/
 
 .forms {
@@ -823,6 +824,7 @@ footer {
         width: 100%;
         margin-bottom: 60px;
     }
+
     /*Section Cursos */
     .flexbox-cursos {
         display: flex;
@@ -1045,6 +1047,11 @@ footer {
         margin-bottom: 40px;
         text-align: initial;
         color: #555;
+    .flexbox-post-service {
+        display: flex;
+    }
+    .flexbox-cursos {
+        display: flex;
     }
     .img-cursos img {
         display: block;
@@ -1131,6 +1138,7 @@ footer {
         flex: 1;
     }
     .curso-img img {
+
         width: 80%;
         margin-top: 20px;
         margin-bottom: 20px;
