@@ -29,6 +29,9 @@ header {
     width: 100%;
 }
 
+
+/* Menu */
+
 .navbar-content img {
     width: 120px;
 }
@@ -150,7 +153,6 @@ header {
 .centralize-container {
     width: 80%;
     margin: 0 auto;
-    border: 1px solid blue;
 }
 
 
@@ -206,6 +208,10 @@ header {
 
 
 /*Section Services */
+
+.flexbox-services {
+    display: grid;
+}
 
 .img-services {
     display: flex;
@@ -404,7 +410,6 @@ header {
 .img-cursos {
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 1px solid orange;
 }
 
 .img-cursos img {
@@ -458,12 +463,6 @@ header {
 .video-youtube iframe {
     width: 100%;
 }
-
-
-/*.class-desc {
-  padding-left: 50px;
-  padding-right: 30px;
-}*/
 
 .txt-video h4 {
     font: 700 18px 'Ubuntu', sans-serif;
@@ -521,7 +520,7 @@ header {
 
 .gallery {
     width: 100%;
-    /*padding: 10px;*/
+    padding: 10px;
 }
 
 .gallery img {
@@ -534,14 +533,12 @@ header {
     margin-top: 10px;
     margin-bottom: 19px;
     text-align: center;
-    border: 1px solid blue;
 }
 
 .gallery p {
     font: 300 13px 'Ubuntu', sans-serif;
     color: hsla(0, 0%, 0%, 1);
     margin-bottom: 5px;
-    border: 1px solid rosybrown;
 }
 
 
@@ -562,11 +559,12 @@ header {
     margin-bottom: 70px;
 }
 
-.center-info {
+.center-info>div {
     width: 100%;
     height: 465px;
-    background-color: hsla(0, 0%, 77%, 1);
     margin-bottom: 60px;
+    background-size: cover;
+    background-image: url(./img/cifrao.jpg);
 }
 
 .post-text {
@@ -639,8 +637,92 @@ header {
     margin-bottom: 60px;
 }
 
-.post-cont {
-    padding-bottom: 200px;
+
+/*Section Contato*/
+
+.forms {
+    padding-top: 5px;
+    display: grid;
+}
+
+#formulario {
+    flex: 1;
+}
+
+#formulario legend {
+    padding-bottom: 10%;
+    font-size: 36px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #ff4081;
+}
+
+form {
+    width: 100%;
+    display: grid;
+    padding: 10px 80px 80px;
+    justify-items: stretch;
+    align-content: center;
+}
+
+input[type='text'] {
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid #686868;
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+input[class='text'] {
+    width: 100%;
+    height: 200px;
+    border-radius: 7px;
+    border: 1px solid #686868;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+input[type='submit'] {
+    width: 108px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: #ff4081;
+    color: #fff;
+    text-emphasis-style: 10px;
+}
+
+input[type='submit']:hover {
+    color: #fff;
+    background-color: #419488;
+}
+
+.img-content {
+    padding-top: 5px;
+    padding-bottom: 5%;
+    width: 100%;
+    height: auto;
+}
+
+.img-content img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.campo_nome {
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #686868;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.msg {
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #686868;
+    box-sizing: border-box;
+    border-radius: 7px;
 }
 
 
@@ -695,14 +777,12 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    /*body {
+    background-color: coral;
+  }*/
+    /*Menu*/
     #desktop-main {
         display: none;
-    }
-    .flexbox-gallery {
-        display: grid;
-    }
-    .flexbox-curso {
-        display: grid;
     }
 }
 
@@ -710,9 +790,11 @@ footer {
     /*body {
     background-color: cornflowerblue;
   }*/
+    /*Menu*/
     #mobile-main {
         display: none;
     }
+    /* Section Header */
     .flexbox-header {
         display: flex;
     }
@@ -722,9 +804,11 @@ footer {
         width: 75%;
         margin-bottom: 20px;
     }
+    /*Section Services */
     .flexbox-services {
         display: flex;
     }
+    /*Section Testimonials */
     .flexbox-testimonials {
         display: flex;
         flex-wrap: wrap;
@@ -739,9 +823,7 @@ footer {
         width: 100%;
         margin-bottom: 60px;
     }
-    .flexbox-post-service {
-        display: flex;
-    }
+    /*Section Cursos */
     .flexbox-cursos {
         display: flex;
     }
@@ -756,6 +838,7 @@ footer {
     .texto-de-cursos {
         flex: 1;
     }
+    /*Section Curso */
     .flexbox-curso {
         display: flex;
     }
@@ -776,6 +859,7 @@ footer {
         gap: 30px;
         margin-bottom: 50px;
     }
+    /*Section Blog */
     .flexbox-blog {
         display: flex;
     }
@@ -799,16 +883,69 @@ footer {
     }
     .gallery {
         width: 50%;
+    }
+    /*Section Post */
+    .flexbox-post-service {
+        display: flex;
+    }
+    /*Section Contato*/
+    .forms {
+        padding-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img-content {
+        width: 100%;
+        flex: 1;
+    }
+    .img-content img {
+        width: 100%;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    /* body {
-    background-color: rgb(123, 216, 120);
-  }*/
+    .title-header {
+        padding-top: 5%;
+        /* text-align: left; */
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 82px;
+        justify-content: flex-start;
+    }
+    .title h1 {
+        color: hsla(340, 100%, 63%, 1);
+        font: 700 50px 'Ubuntu', sans-serif;
+        margin-bottom: 25px;
+        margin-top: 50px;
+        width: 329px;
+        height: 172px;
+        height: min-content;
+        text-align: left;
+    }
+    .title p {
+        font: 400 20px 'Ubuntu', sans-serif;
+        color: hsla(0, 0%, 33%, 1);
+        text-align: center;
+        margin-bottom: 30px;
+        text-align: left;
+        width: 329px;
+    }
+    .first-button {
+        align-self: baseline;
+    }
+    .first-button :hover {
+        color: #fff;
+        background-color: #419488;
+    }
+    /*Menu*/
     #mobile-main {
         display: none;
     }
+    /* Section Header */
     .flexbox-header {
         display: flex;
     }
@@ -818,15 +955,63 @@ footer {
         width: 100%;
         margin-bottom: 20px;
     }
+    /*Section Services */
     .flexbox-services {
         display: flex;
+        padding-top: 5%;
     }
+    .img-mobile {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 74%;
+        height: 248px;
+    }
+    .img-services .h2-services {
+        margin-top: 20px;
+    }
+    .img-services p {
+        padding-right: 33px;
+        padding-left: 60px;
+    }
+    .start-button a {
+        padding: 10px 35px;
+    }
+    .start-button :hover {
+        background-color: #419488;
+    }
+    /* Section Testimonials */
     .flexbox-testimonials {
         display: flex;
         flex-wrap: wrap;
     }
+    .centralize-container h3 {
+        font: 700 30px 'Nunito', sans-serif;
+        text-transform: uppercase;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    .person-testimonial {
+        font: 300 16px 'Nunito', sans-serif;
+        margin-bottom: 8px;
+        padding: 6px;
+        width: 332px;
+    }
     .person-img {
         width: 50%;
+    }
+    .centralize-container h3 {
+        padding-left: 8px;
+    }
+    .posts a {
+        padding: 10px 30px;
+    }
+    .more-content img {
+        width: 80%;
+    }
+    .txt-content {
+        margin-top: 10px;
+        height: 100px;
+        width: 274px;
     }
     /*section additional-info */
     .flexbox-additional {
@@ -835,54 +1020,178 @@ footer {
         width: 100%;
         margin-bottom: 60px;
     }
-    .flexbox-post-service {
-        display: flex;
+    .link-posts {
+        text-align: center;
+        margin-right: 7%;
     }
+    .link-posts :hover {
+        color: #419488;
+    }
+    /*Section Cursos */
     .flexbox-cursos {
         display: flex;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .header-cursos .header-cursos-h2 {
+        color: hsla(340, 100%, 63%, 1);
+        font: 700 50px 'Ubuntu', sans-serif;
+        margin-top: 50px;
+        margin-bottom: 5px;
+        text-align: initial;
+    }
+    .header-cursos p {
+        font: 400 20px 'Ubuntu', sans-serif;
+        margin-bottom: 40px;
+        text-align: initial;
+        color: #555;
     }
     .img-cursos img {
         display: block;
         margin: 0 auto;
-        width: 100%;
+        width: 60%;
+        display: block;
+        margin: 5px auto;
+        width: 75%;
+        margin-right: 5px;
+        max-width: 250px;
     }
     .img-cursos {
         flex: 1;
+        width: 110%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: -40px;
+        justify-content: space-evenly;
+    }
+    .img-cursos img {
+        display: block;
+        margin: 5px auto;
+        width: 75%;
+        margin-right: 5px;
     }
     .texto-de-cursos {
-        flex: 1;
+        flex: 2;
+        justify-content: left;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: normal;
+        margin-left: 66px;
     }
+    .texto-de-cursos .img-cursos-h2 {
+        color: hsla(340, 100%, 63%, 1);
+        font: 700 27px 'Ubuntu', sans-serif;
+        margin-top: 10px;
+        margin-bottom: 23px;
+    }
+    .texto-de-cursos p {
+        color: hsla(0, 0%, 0%, 1);
+        font: 300 14px 'Ubuntu', sans-serif;
+        text-align: left;
+        padding-right: 105px;
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+    .cursos-button a {
+        padding: 10px 32px;
+    }
+    .cursos-button :hover {
+        background-color: #ff4081;
+    }
+    /*Section Curso */
     .flexbox-curso {
         display: flex;
+        gap: 16px;
     }
     .texto-curso {
         flex: 1;
+        padding-inline: 68px;
+    }
+    .texto-curso .curso-h2 {
+        color: hsla(340, 100%, 63%, 1);
+        font: 700 50px 'Ubuntu', sans-serif;
+        text-align: left;
+        margin-top: 50px;
+        margin-bottom: 35px;
+        width: 81%;
+    }
+    .flexbox-curso p {
+        color: hsla(0, 0%, 0%, 1);
+        font: 300 16px 'Ubuntu', sans-serif;
+        text-align: left;
+        padding-right: 10px;
+        padding-left: 0;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        max-width: 343px;
     }
     .curso-img {
         flex: 1;
     }
     .curso-img img {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
+        width: 80%;
+        margin-top: 20px;
         margin-bottom: 20px;
+        margin-left: -40px;
+        justify-content: space-evenly;
     }
     .flexbox-video {
         display: flex;
-        gap: 30px;
+        gap: 64px;
         margin-bottom: 50px;
+        margin-left: 6%;
+        /* max-height: none; */
+        margin-top: 6%;
     }
+    .txt-video h4 {
+        font: 700 32px 'Ubuntu', sans-serif;
+        color: hsla(340, 100%, 63%, 1);
+        margin-top: 0px;
+        margin-bottom: 16px;
+    }
+    .video-youtube iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .txt-video p {
+        width: 80%;
+        font: 700 15px 'Ubuntu', sans-serif;
+        margin-top: 6%;
+    }
+    /*Section Blog */
     .flexbox-blog {
+        margin-top: 10%;
+        margin-bottom: 10%;
         display: flex;
+    }
+    .texto-blog p {
+        font: 400 16px 'Ubuntu', sans-serif;
+        color: hsla(0, 0%, 33%, 1);
+        text-align: left;
+        margin-bottom: 20px;
+        margin-left: 10%;
     }
     .blog-img img {
         margin-bottom: 20px;
         display: block;
         margin: 0 auto;
-        width: 100%;
+        width: 80%;
     }
     .texto-blog {
         flex: 1;
+        margin-top: 5%;
+    }
+    .texto-blog .blog-h2 {
+        color: hsla(171, 39%, 42%, 1);
+        font: 700 41px 'Ubuntu', sans-serif;
+        text-align: left;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        width: 80%;
+        margin-left: 10%;
     }
     .blog-img {
         flex: 1;
@@ -895,5 +1204,67 @@ footer {
     }
     .gallery {
         width: 50%;
+        padding: 4%;
+    }
+    .grey-container .centralize-container h3 {
+        font: 700 26px 'Nunito', sans-serif;
+        text-transform: inherit;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    .grey-container .gallery p {
+        font: 300 14px 'Ubuntu', sans-serif;
+        color: hsla(0, 0%, 0%, 1);
+        margin-bottom: 5px;
+        width: 100%;
+        margin-left: 2%;
+    }
+    /*Section Post */
+    .flexbox-post-service {
+        display: flex;
+    }
+    .post-text p {
+        font: 300 17px 'Ubuntu', sans-serif;
+    }
+    .post .post-h2 {
+        font: 500 55px 'Ubuntu', sans-serif;
+    }
+    .post-text h4 {
+        font: 500 24px 'Ubuntu', sans-serif;
+    }
+    .data {
+        font: 300 20px 'Ubuntu', sans-serif;
+    }
+    .services-post-h2 {
+        font: 500 40px 'Ubuntu', sans-serif;
+    }
+    .flexbox-post-services {
+        display: flex;
+        margin-top: 5%;
+    }
+    .img-post h2 {
+        color: hsla(340, 100%, 63%, 1);
+        font: 700 23px 'Ubuntu', sans-serif;
+        margin-top: 45px;
+        margin-bottom: 23px;
+    }
+    #post .imagem-mobile {
+        height: 50%;
+    }
+    .start-button-post :hover {
+        background-color: #419488;
+    }
+    /*Section Contato*/
+    .forms {
+        padding-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img-content {
+        width: 100%;
+        flex: 1;
+    }
+    .img-content img {
+        width: 100%;
     }
 }
