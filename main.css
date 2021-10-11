@@ -865,6 +865,30 @@ footer {
   .flexbox-header {
     display: flex;
   }
+  .title-header {
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 9%;
+  }
+  .centralize-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+  .title {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 10px;
+    align-items: center;
+  }
+  .title h1 {
+    font: 700 27px 'Ubuntu', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
   .header-img {
     display: block;
     margin: 0 auto;
@@ -875,10 +899,38 @@ footer {
   .flexbox-services {
     display: flex;
   }
+  .grey-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .flexbox-services {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-mobile {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 45%;
+  }
+  .centralize-container h3 {
+    font: 700 34px 'Ubuntu', sans-serif;
+    color: hsla(171, 39%, 42%, 1);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   /*Section Testimonials */
   .flexbox-testimonials {
     display: flex;
     flex-wrap: wrap;
+  }
+  .flexbox-testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: unset;
   }
   .person-img {
     width: 50%;
@@ -890,9 +942,44 @@ footer {
     width: 100%;
     margin-bottom: 60px;
   }
+  .link-posts {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .centralize-container {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
+  .centralize-container h3 {
+    font: 700 34px 'Ubuntu', sans-serif;
+    margin-bottom: 32px;
+  }
+  .header-cursos .header-cursos-h2 {
+    color: hsla(340, 100%, 63%, 1);
+    font: 700 41px 'Ubuntu', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .header-cursos p {
+    font: 400 18px 'Ubuntu', sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+  }
   /*Section Cursos */
   .flexbox-cursos {
     display: flex;
+  }
+  .flexbox-cursos {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   .img-cursos img {
     display: block;
@@ -908,6 +995,7 @@ footer {
   /*Section Curso */
   .flexbox-curso {
     display: flex;
+    margin-bottom: 20%;
   }
   .curso-img img {
     display: block;
@@ -923,12 +1011,34 @@ footer {
   }
   .flexbox-video {
     display: flex;
-    gap: 30px;
     margin-bottom: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    padding: 4%;
+  }
+  .flexbox-video {
+    display: grid;
+    gap: 0;
+    margin-bottom: 50px;
+  }
+  .txt-video h4 {
+    font: 700 20px 'Ubuntu', sans-serif;
+    color: hsla(340, 100%, 63%, 1);
+    margin-top: opx;
+    margin-bottom: 16px;
   }
   /*Section Blog */
   .flexbox-blog {
     display: flex;
+  }
+  .title-blog .grey-container {
+    padding-top: 7%;
+    padding-bottom: 0px;
+  }
+  .centralize-container h3 {
+    font: 700 19px 'Ubuntu', sans-serif;
+    margin-bottom: 0;
+    margin-top: 5%;
   }
   .blog-img img {
     margin-bottom: 20px;
@@ -950,10 +1060,33 @@ footer {
   }
   .gallery {
     width: 50%;
+    margin-bottom: 5%;
   }
   /*Section Post */
   .flexbox-post-service {
     display: flex;
+  }
+  .data {
+    color: hsla(0, 0%, 62%, 1);
+    font: 300 15px 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .post-text {
+    margin-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .services-post-h2 {
+    font: 500 37px 'Ubuntu', sans-serif;
+  }
+  .img-post h2 {
+    font: 700 16px 'Ubuntu', sans-serif;
+  }
+  #post .imagem-mobile {
+    margin-bottom: 20px;
+    width: 61%;
+    max-height: 30%;
   }
   /*Section Contato*/
   .forms {
@@ -967,6 +1100,13 @@ footer {
   }
   .img-content img {
     width: 100%;
+  }
+  .img-content {
+    padding-top: 11%;
+    padding-bottom: 5%;
+    width: 100%;
+    height: auto;
+    padding-right: 11%;
   }
 }
 
@@ -1016,6 +1156,7 @@ footer {
   /* Section Header */
   .flexbox-header {
     display: flex;
+    justify-content: center;
   }
   .header-img {
     display: block;
@@ -1024,6 +1165,13 @@ footer {
     margin-bottom: 20px;
   }
   /*Section Services */
+
+  .centralize-container {
+    width: 100%;
+    margin: 0px auto;
+    padding: 4%;
+    justify-content: center;
+  }
   .flexbox-services {
     display: flex;
     padding-top: 5%;
@@ -1035,7 +1183,10 @@ footer {
     height: 248px;
   }
   .img-services .h2-services {
-    margin-top: 20px;
+    color: hsla(340, 100%, 63%, 1);
+    font: 700 21px 'Ubuntu', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 23px;
   }
   .img-services p {
     padding-right: 33px;
@@ -1052,20 +1203,30 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
+  .testimonials {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    padding: 2%;
+  }
+  .person-testimonial {
+    font: 300 15px 'Nunito', sans-serif;
+    margin-bottom: 8px;
+    padding: 6px;
+    width: 320px;
+  }
   .centralize-container h3 {
     font: 700 30px 'Nunito', sans-serif;
     text-transform: uppercase;
     text-align: left;
     padding-bottom: 10px;
   }
-  .person-testimonial {
-    font: 300 16px 'Nunito', sans-serif;
-    margin-bottom: 8px;
-    padding: 6px;
-    width: 332px;
-  }
   .person-img {
     width: 50%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-left: 9px;
   }
   .centralize-container h3 {
     padding-left: 8px;
@@ -1074,7 +1235,8 @@ footer {
     padding: 10px 30px;
   }
   .more-content img {
-    width: 80%;
+    width: 100%;
+    max-width: 241px;
   }
   .txt-content {
     margin-top: 10px;
@@ -1090,7 +1252,16 @@ footer {
   }
   .link-posts {
     text-align: center;
-    margin-right: 7%;
+  }
+  .more-content {
+    margin-left: 19px;
+  }
+  .aditional-info .centralize-container h3 {
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0px auto;
+    padding: 4%;
+    justify-content: center;
   }
   .link-posts a:hover {
     background-color: #419488;
@@ -1102,6 +1273,10 @@ footer {
     display: flex;
     margin-top: 30px;
     margin-bottom: 20px;
+  }
+
+  .cursos .centralize-container {
+    padding-left: 10%;
   }
   .header-cursos .header-cursos-h2 {
     color: hsla(340, 100%, 63%, 1);
@@ -1177,7 +1352,7 @@ footer {
   }
   .texto-curso {
     flex: 1;
-    padding-inline: 68px;
+    padding-inline: 55px;
   }
   .texto-curso .curso-h2 {
     color: hsla(340, 100%, 63%, 1);
@@ -1185,7 +1360,7 @@ footer {
     text-align: left;
     margin-top: 50px;
     margin-bottom: 35px;
-    width: 81%;
+    width: 90%;
   }
   .flexbox-curso p {
     color: hsla(0, 0%, 0%, 1);
@@ -1212,8 +1387,10 @@ footer {
     gap: 64px;
     margin-bottom: 50px;
     margin-left: 6%;
-    /* max-height: none; */
     margin-top: 6%;
+  }
+  .video-youtube {
+    width: 100%;
   }
   .txt-video h4 {
     font: 700 32px 'Ubuntu', sans-serif;
@@ -1293,11 +1470,20 @@ footer {
   .flexbox-post-service {
     display: flex;
   }
+
+  #post .post centralize-container {
+    padding: 10%;
+  }
+  .post-text {
+    width: 92%;
+    margin-bottom: 100px;
+    padding-left: 9%;
+  }
   .post-text p {
     font: 300 17px 'Ubuntu', sans-serif;
   }
   .post .post-h2 {
-    font: 500 55px 'Ubuntu', sans-serif;
+    font: 500 53px 'Ubuntu', sans-serif;
   }
   .post-text h4 {
     font: 500 24px 'Ubuntu', sans-serif;
