@@ -45,6 +45,13 @@ header {
   font: 700 20px 'Ubuntu', sans-serif;
   text-transform: uppercase;
   padding: 3px;
+  transition: color 0.3s ease;
+}
+
+.menu-nav a:hover {
+  background-color: hsla(0, 0%, 99%, 1);
+  color: #419488;
+  border-radius: 5px;
 }
 
 #mobile-main {
@@ -65,11 +72,14 @@ header {
 #menu-toggle a {
   color: hsla(0, 0%, 100%, 1);
   font: 400 17px 'Ubuntu', sans-serif;
-  transition: font-size 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 #menu-toggle a:hover {
-  font-size: 21px;
+  background-color: hsla(0, 0%, 99%, 1);
+  color: #419488;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
 #menu-toggle input {
@@ -297,6 +307,19 @@ header {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  transition: color 0.3s ease;
+  border: 1px solid yellow;
+}
+
+.link-h3-blog {
+  text-align: center;
+  color: hsla(171, 39%, 42%, 1);
+  transition: color 0.3s ease;
+  border: 1px solid orange;
+}
+
+.centralize-container h3 :hover {
+  color: rgb(3, 92, 79);
 }
 
 .flexbox-additional {
@@ -314,11 +337,6 @@ header {
 .more-content img {
   width: 100%;
 }
-
-/*.imagem-more-content img {
-    width: 100%;
-    height: auto;
-}*/
 
 .txt-content {
   margin-top: 10px;
@@ -527,6 +545,15 @@ header {
   margin-top: 10px;
   margin-bottom: 19px;
   text-align: center;
+  border: 1px solid blue;
+}
+
+.link-blog-img {
+  color: hsla(340, 100%, 63%, 1);
+}
+
+.gallery h3 .link-blog-img:hover {
+  color: rgb(255, 5, 59);
 }
 
 .gallery p {
@@ -749,23 +776,35 @@ footer {
 .menu-footer1 a {
   color: hsla(0, 0%, 100%, 1);
   font: 400 13px 'Ubuntu', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.menu-footer1 a:hover {
+  background-color: hsla(0, 0%, 99%, 1);
+  color: #419488;
+  border-radius: 5px;
 }
 
 .links-footer {
-  margin-top: 30px;
-}
-
-.txt-footer {
-  padding: 5px 10px 5px 10px;
-  border: solid 1px hsla(0, 0%, 100%, 1);
-  margin-bottom: 10px;
-  border-radius: 20px;
+  margin-top: 18px;
   text-align: center;
 }
 
-.links-footer a {
+.txt-footer {
+  margin-bottom: 15px;
+}
+
+.txt-footer a {
+  padding: 5px 10px 5px 10px;
+  border: solid 1px hsla(0, 0%, 100%, 1);
+  border-radius: 20px;
   color: hsla(0, 0%, 100%, 1);
   font: 400 13px 'Ubuntu', sans-serif;
+}
+
+.links-footer a:hover {
+  background-color: hsla(0, 0%, 100%, 1);
+  color: #419488;
 }
 
 @media screen and (max-width: 767px) {
@@ -936,6 +975,7 @@ footer {
     width: 50%;
   }
   /*section additional-info */
+
   .flexbox-additional {
     display: flex;
     flex-wrap: wrap;
@@ -947,6 +987,7 @@ footer {
     margin-bottom: 50px;
     text-align: center;
   }
+
   .centralize-container {
     width: 95%;
     margin: 0 auto;
@@ -1256,6 +1297,7 @@ footer {
   .more-content {
     margin-left: 19px;
   }
+
   .aditional-info .centralize-container h3 {
     text-transform: uppercase;
     width: 100%;
