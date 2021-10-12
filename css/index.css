@@ -567,12 +567,15 @@ footer {
     }
     .flexbox-services {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        padding-top: 5%;
     }
     .img-mobile {
         margin-top: 0;
         margin-bottom: 0;
         width: 45%;
+        height: auto;
+        max-height: 100px;
     }
     .centralize-container h3 {
         font: 700 34px 'Ubuntu', sans-serif;
@@ -771,7 +774,7 @@ footer {
         text-align: center;
     }
     .more-content {
-        margin-left: 19px;
+        margin-left: 72px;
     }
     .aditional-info .centralize-container h3 {
         text-transform: uppercase;
