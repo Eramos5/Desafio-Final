@@ -132,8 +132,9 @@ header {
 }
 
 #mobile-main-content {
+    visibility: hidden;
     position: absolute;
-    width: 300px;
+    /* width: 300px; */
     margin: -100px 0 0 -48px;
     padding: 25px;
     padding-top: 100px;
@@ -141,9 +142,10 @@ header {
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
-    transform: translate(100%, 0);
+    transform: translateY(10px);
     transition: 0.5s;
     border-radius: 0px 0px 5px 5px;
+    right: 0px;
 }
 
 #mobile-main-content li {
@@ -151,7 +153,8 @@ header {
 }
 
 #menu-toggle input:checked~ul {
-    transform: none;
+    transform: scaleY(1);
+    visibility: visible;
 }
 
 .grey-container {
