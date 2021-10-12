@@ -1,427 +1,435 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 header {
-  box-shadow: 0px 3px 7px hsla(0, 0%, 0%, 25%);
+    box-shadow: 0px 3px 7px hsla(0, 0%, 0%, 25%);
 }
 
 .navbar-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 15px 30px 30px;
-  background-color: hsla(174, 53%, 38%, 1);
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 30px 30px;
+    background-color: hsla(174, 53%, 38%, 1);
+    width: 100%;
 }
+
 
 /* Menu */
 
 .navbar-content img {
-  width: 120px;
+    width: 120px;
 }
 
 .menu-nav {
-  display: flex;
-  gap: 42px;
+    display: flex;
+    gap: 42px;
 }
 
 .menu-nav a {
-  color: hsla(0, 0%, 99%, 1);
-  font: 700 20px 'Ubuntu', sans-serif;
-  text-transform: uppercase;
-  padding: 3px;
-  transition: color 0.3s ease;
+    color: hsla(0, 0%, 99%, 1);
+    font: 700 20px 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    padding: 3px;
+    transition: color 0.3s ease;
 }
 
 .menu-nav a:hover {
-  background-color: hsla(0, 0%, 99%, 1);
-  color: #419488;
-  border-radius: 5px;
+    background-color: hsla(0, 0%, 99%, 1);
+    color: #419488;
+    border-radius: 5px;
 }
 
 #mobile-main {
-  display: grid;
-  margin-top: -100px;
+    display: grid;
+    margin-top: -100px;
 }
 
 #menu-toggle {
-  display: block;
-  position: relative;
-  top: 50px;
-  right: 10px;
-  z-index: 1;
-  user-select: none;
-  -webkit-user-select: none;
+    display: block;
+    position: relative;
+    top: 50px;
+    right: 10px;
+    z-index: 1;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 #menu-toggle a {
-  color: hsla(0, 0%, 100%, 1);
-  font: 400 17px 'Ubuntu', sans-serif;
-  transition: color 0.3s ease;
+    color: hsla(0, 0%, 100%, 1);
+    font: 400 17px 'Ubuntu', sans-serif;
+    transition: color 0.3s ease;
 }
 
 #menu-toggle a:hover {
-  background-color: hsla(0, 0%, 99%, 1);
-  color: #419488;
-  border-radius: 5px;
-  font-size: 20px;
+    background-color: hsla(0, 0%, 99%, 1);
+    color: #419488;
+    border-radius: 5px;
+    font-size: 20px;
 }
 
 #menu-toggle input {
-  display: block;
-  width: 45px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  z-index: 2;
-  opacity: 0;
-  -webkit-touch-callout: none;
+    display: block;
+    width: 45px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+    -webkit-touch-callout: none;
 }
 
 #menu-toggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background-color: hsla(0, 0%, 99%, 1);
-  border-radius: 10px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: hsla(0, 0%, 99%, 1);
+    border-radius: 10px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 #menu-toggle span:first-child {
-  transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
 }
 
 #menu-togglee span:nth-last-child(2) {
-  transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
 }
 
-#menu-toggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
+#menu-toggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
 }
 
-#menu-toggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+#menu-toggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menu-toggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+#menu-toggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
 }
 
 #mobile-main-content {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -48px;
-  padding: 25px;
-  padding-top: 100px;
-  background-color: hsla(174, 53%, 38%, 1);
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  transition: 0.5s;
-  border-radius: 0px 0px 5px 5px;
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -48px;
+    padding: 25px;
+    padding-top: 100px;
+    background-color: hsla(174, 53%, 38%, 1);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: 0.5s;
+    border-radius: 0px 0px 5px 5px;
 }
 
 #mobile-main-content li {
-  padding: 2px 0;
+    padding: 2px 0;
 }
 
-#menu-toggle input:checked ~ ul {
-  transform: none;
+#menu-toggle input:checked~ul {
+    transform: none;
 }
 
 .grey-container {
-  background-color: hsla(0, 0%, 97%, 1);
-  padding-top: 30px;
-  padding-bottom: 20px;
+    background-color: hsla(0, 0%, 97%, 1);
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .centralize-container {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
+
 
 /*Section Curso */
 
 .flexbox-curso {
-  display: grid;
+    display: grid;
 }
 
 .texto-curso .curso-h2 {
-  color: hsla(340, 100%, 63%, 1);
-  font: 700 25px 'Ubuntu', sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 35px;
+    color: hsla(340, 100%, 63%, 1);
+    font: 700 25px 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
 }
 
 .flexbox-curso p {
-  color: hsla(0, 0%, 0%, 1);
-  font: 300 14px 'Ubuntu', sans-serif;
-  text-align: center;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-bottom: 40px;
-  margin-top: 20px;
+    color: hsla(0, 0%, 0%, 1);
+    font: 300 14px 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .curso-img img {
-  display: block;
-  width: 60%;
-  margin: 0 auto;
-  margin-bottom: 20px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .flexbox-video {
-  display: grid;
-  gap: 30px;
-  margin-bottom: 50px;
+    display: grid;
+    gap: 30px;
+    margin-bottom: 50px;
 }
 
 .video-youtube {
-  width: 100%;
+    width: 100%;
 }
 
 .video-youtube iframe {
-  width: 100%;
+    width: 100%;
 }
 
 .txt-video h4 {
-  font: 700 18px 'Ubuntu', sans-serif;
-  color: hsla(340, 100%, 63%, 1);
-  margin-top: 40px;
-  margin-bottom: 16px;
+    font: 700 18px 'Ubuntu', sans-serif;
+    color: hsla(340, 100%, 63%, 1);
+    margin-top: 40px;
+    margin-bottom: 16px;
 }
 
 .ctxt-video p {
-  font: 300 13px 'Ubuntu', sans-serif;
-  color: hsla(0, 0%, 0%, 1);
-  margin-bottom: 30px;
+    font: 300 13px 'Ubuntu', sans-serif;
+    color: hsla(0, 0%, 0%, 1);
+    margin-bottom: 30px;
 }
 
 .line {
-  width: 100%;
-  height: 3px;
-  background-color: hsla(0, 0%, 77%, 1);
+    width: 100%;
+    height: 3px;
+    background-color: hsla(0, 0%, 77%, 1);
 }
+
 
 /*Section Footer */
 
 footer {
-  background-color: hsla(171, 39%, 42%, 1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 15px;
+    background-color: hsla(171, 39%, 42%, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 15px;
 }
 
 .logo-footer {
-  margin-top: 5px;
-  margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .logo-footer img {
-  width: 150px;
+    width: 150px;
 }
 
 .menu-footer1 li {
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
 .menu-footer1 a {
-  color: hsla(0, 0%, 100%, 1);
-  font: 400 13px 'Ubuntu', sans-serif;
-  transition: color 0.3s ease;
+    color: hsla(0, 0%, 100%, 1);
+    font: 400 13px 'Ubuntu', sans-serif;
+    transition: color 0.3s ease;
 }
 
 .menu-footer1 a:hover {
-  background-color: hsla(0, 0%, 99%, 1);
-  color: #419488;
-  border-radius: 5px;
+    background-color: hsla(0, 0%, 99%, 1);
+    color: #419488;
+    border-radius: 5px;
 }
 
 .links-footer {
-  margin-top: 18px;
-  text-align: center;
+    margin-top: 18px;
+    text-align: center;
 }
 
 .txt-footer {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .txt-footer a {
-  padding: 5px 10px 5px 10px;
-  border: solid 1px hsla(0, 0%, 100%, 1);
-  border-radius: 20px;
-  color: hsla(0, 0%, 100%, 1);
-  font: 400 13px 'Ubuntu', sans-serif;
+    padding: 5px 10px 5px 10px;
+    border: solid 1px hsla(0, 0%, 100%, 1);
+    border-radius: 20px;
+    color: hsla(0, 0%, 100%, 1);
+    font: 400 13px 'Ubuntu', sans-serif;
 }
 
 .links-footer a:hover {
-  background-color: hsla(0, 0%, 100%, 1);
-  color: #419488;
+    background-color: hsla(0, 0%, 100%, 1);
+    color: #419488;
 }
 
 @media screen and (max-width: 767px) {
-  /*Menu*/
-  #desktop-main {
-    display: none;
-  }
-
-  /*Section curso*/
-
-  .video-youtube {
-    margin-top: 50px;
-  }
-
-  .txt-video h4 {
-    margin: 10px;
-  }
-
-  .ctxt-video p {
-    margin-bottom: 50px;
-  }
+    /*Menu*/
+    #desktop-main {
+        display: none;
+    }
+    /*Section curso*/
+    .video-youtube {
+        margin-top: 50px;
+    }
+    .txt-video h4 {
+        margin: 10px;
+    }
+    .ctxt-video p {
+        margin-bottom: 50px;
+    }
+    footer {
+        background-color: hsla(171, 39%, 42%, 1);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .logo-footer img {
+        width: 100%;
+        padding-top: 20%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /*Menu*/
-  #mobile-main {
-    display: none;
-  }
-
-  /*Section Curso */
-  .flexbox-curso {
-    display: flex;
-    margin-top: 80px;
-    margin-bottom: 20%;
-  }
-  .curso-img img {
-    display: block;
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  .texto-curso {
-    flex: 1;
-  }
-  .curso-img {
-    flex: 1;
-  }
-  .flexbox-video {
-    display: flex;
-    margin-bottom: 50px;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-    padding: 4%;
-  }
-  .flexbox-video {
-    display: grid;
-    gap: 0;
-    margin-bottom: 50px;
-  }
-  .txt-video h4 {
-    font: 700 20px 'Ubuntu', sans-serif;
-    color: hsla(340, 100%, 63%, 1);
-    margin-top: opx;
-    margin-bottom: 16px;
-  }
+    /*Menu*/
+    #mobile-main {
+        display: none;
+    }
+    /*Section Curso */
+    .flexbox-curso {
+        display: flex;
+        margin-top: 80px;
+        margin-bottom: 20%;
+    }
+    .curso-img img {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .texto-curso {
+        flex: 1;
+    }
+    .curso-img {
+        flex: 1;
+    }
+    .flexbox-video {
+        display: flex;
+        margin-bottom: 50px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        padding: 4%;
+    }
+    .flexbox-video {
+        display: grid;
+        gap: 0;
+        margin-bottom: 50px;
+    }
+    .txt-video h4 {
+        font: 700 20px 'Ubuntu', sans-serif;
+        color: hsla(340, 100%, 63%, 1);
+        margin-top: opx;
+        margin-bottom: 16px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-  /*Menu*/
-  #mobile-main {
-    display: none;
-  }
-
-  /*Section Curso */
-  .flexbox-curso {
-    display: flex;
-    gap: 16px;
-  }
-  .texto-curso {
-    flex: 1;
-    padding-inline: 55px;
-  }
-  .texto-curso .curso-h2 {
-    color: hsla(340, 100%, 63%, 1);
-    font: 700 50px 'Ubuntu', sans-serif;
-    text-align: left;
-    margin-top: 50px;
-    margin-bottom: 35px;
-    width: 90%;
-  }
-  .flexbox-curso p {
-    color: hsla(0, 0%, 0%, 1);
-    font: 300 16px 'Ubuntu', sans-serif;
-    text-align: left;
-    padding-right: 10px;
-    padding-left: 0;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    max-width: 343px;
-  }
-  .curso-img {
-    flex: 1;
-  }
-  .curso-img img {
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: -40px;
-    justify-content: space-evenly;
-  }
-  .flexbox-video {
-    display: flex;
-    gap: 64px;
-    margin-bottom: 50px;
-    margin-left: 6%;
-    margin-top: 6%;
-  }
-  .video-youtube {
-    width: 100%;
-  }
-  .txt-video h4 {
-    font: 700 32px 'Ubuntu', sans-serif;
-    color: hsla(340, 100%, 63%, 1);
-    margin-top: 0px;
-    margin-bottom: 16px;
-  }
-  .video-youtube iframe {
-    width: 100%;
-    height: 100%;
-  }
-  .txt-video p {
-    width: 80%;
-    font: 700 15px 'Ubuntu', sans-serif;
-    margin-top: 6%;
-  }
+    /*Menu*/
+    #mobile-main {
+        display: none;
+    }
+    /*Section Curso */
+    .flexbox-curso {
+        display: flex;
+        gap: 16px;
+    }
+    .texto-curso {
+        flex: 1;
+        padding-inline: 55px;
+    }
+    .texto-curso .curso-h2 {
+        color: hsla(340, 100%, 63%, 1);
+        font: 700 50px 'Ubuntu', sans-serif;
+        text-align: left;
+        margin-top: 50px;
+        margin-bottom: 35px;
+        width: 90%;
+    }
+    .flexbox-curso p {
+        color: hsla(0, 0%, 0%, 1);
+        font: 300 16px 'Ubuntu', sans-serif;
+        text-align: left;
+        padding-right: 10px;
+        padding-left: 0;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        max-width: 343px;
+    }
+    .curso-img {
+        flex: 1;
+    }
+    .curso-img img {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: -40px;
+        justify-content: space-evenly;
+    }
+    .flexbox-video {
+        display: flex;
+        gap: 64px;
+        margin-bottom: 50px;
+        margin-left: 6%;
+        margin-top: 6%;
+    }
+    .video-youtube {
+        width: 100%;
+    }
+    .txt-video h4 {
+        font: 700 32px 'Ubuntu', sans-serif;
+        color: hsla(340, 100%, 63%, 1);
+        margin-top: 0px;
+        margin-bottom: 16px;
+    }
+    .video-youtube iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .txt-video p {
+        width: 80%;
+        font: 700 15px 'Ubuntu', sans-serif;
+        margin-top: 6%;
+    }
 }
