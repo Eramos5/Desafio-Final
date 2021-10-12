@@ -896,6 +896,7 @@ footer {
   /*body {
     background-color: cornflowerblue;
   }*/
+
   /*Menu*/
   #mobile-main {
     display: none;
@@ -1149,9 +1150,11 @@ footer {
     height: auto;
     padding-right: 11%;
   }
-}
+
+/*/////// FINAL FORMATAÇÃO TABLET ///////////*/
 
 @media screen and (min-width: 1024px) {
+  
   .title-header {
     padding-top: 5%;
     /* text-align: left; */
