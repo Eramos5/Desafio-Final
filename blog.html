@@ -28,39 +28,44 @@
   </head>
 
   <body>
-    <header class="header-position">
+    <header class="header-position" role="banner">
       <div class="navbar-content">
         <a href="./index.html">
           <img src="./img/logo-header.png" alt="logotipo dindin" />
         </a>
-        <nav class="button-content" id="desktop-main">
-          <ul class="menu-nav">
-            <li><a href="./cursos.html">Cursos</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contato.html">Contato</a></li>
+        <nav
+          class="button-content"
+          id="desktop-main"
+          role="navigation"
+          aria-level="main navigation"
+        >
+          <ul class="menu-nav" role="menu">
+            <li><a href="./cursos.html" role="menuitem">Cursos</a></li>
+            <li><a href="./blog.html" role="menuitem">Blog</a></li>
+            <li><a href="./contato.html" role="menuitem">Contato</a></li>
           </ul>
         </nav>
-        <nav id="mobile-main">
+        <nav id="mobile-main" role="navigation" aria-level="main navigation">
           <div id="menu-toggle">
             <input type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
-            <ul id="mobile-main-content">
-              <li><a href="./cursos.html">Cursos</a></li>
-              <li><a href="./blog.html">Blog</a></li>
-              <li><a href="./contato.html">Contato</a></li>
+            <ul id="mobile-main-content" role="menu">
+              <li><a href="./cursos.html" role="menuitem">Cursos</a></li>
+              <li><a href="./blog.html" role="menuitem">Blog</a></li>
+              <li><a href="./contato.html" role="menuitem">Contato</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-    <main>
-      <section class="title-blog" id="blog">
+    <main role="main">
+      <section class="title-blog">
         <div class="centralize-container">
           <div class="flexbox-blog">
             <div class="texto-blog">
-              <h2 class="blog-h2">Mais conteudo para você</h2>
+              <h2 class="blog-h2">Mais conteúdo para você</h2>
               <p>
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                 aut fugit, sed quia consequuntur magni dolores eos qui ratione
@@ -167,23 +172,31 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <div class="logo-footer">
         <img src="./img/logo-footer.png" alt="logotipo dindin" />
       </div>
-      <div class="menu-footer">
-        <ul class="menu-footer1">
-          <li><a href="./cursos.html">Cursos</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contato.html">Contato</a></li>
+      <nav class="menu-footer" role="navigation">
+        <ul class="menu-footer1" role="menu">
+          <li><a href="./cursos.html" role="menuitem">Cursos</a></li>
+          <li><a href="./blog.html" role="menuitem">Blog</a></li>
+          <li><a href="./contato.html" role="menuitem">Contato</a></li>
         </ul>
-      </div>
+      </nav>
       <div class="links-footer">
         <div class="txt-footer">
-          <a href="./contato.html">quero ser prof</a>
+          <a
+            href="./contato.html"
+            aria-label="Quer ser nosso professor? - Entre em contato conosco"
+            >quero ser prof</a
+          >
         </div>
         <div class="txt-footer">
-          <a href="./contato.html">aqui tem outro link</a>
+          <a
+            href="./contato.html"
+            aria-label="Aqui tem outro link - Entre em contato conosco"
+            >aqui tem outro link</a
+          >
         </div>
       </div>
     </footer>

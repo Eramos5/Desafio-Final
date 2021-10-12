@@ -28,34 +28,39 @@
   </head>
 
   <body>
-    <header class="header-position" id="topo">
+    <header class="header-position" id="topo" role="banner">
       <div class="navbar-content">
         <a href="#">
           <img src="./img/logo-header.png" alt="logotipo dindin" />
         </a>
-        <nav class="button-content" id="desktop-main">
-          <ul class="menu-nav">
-            <li><a href="./cursos.html">Cursos</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contato.html">Contato</a></li>
+        <nav
+          class="button-content"
+          id="desktop-main"
+          role="navigation"
+          aria-level="main navigation"
+        >
+          <ul class="menu-nav" role="menu">
+            <li><a href="./cursos.html" role="menuitem">Cursos</a></li>
+            <li><a href="./blog.html" role="menuitem">Blog</a></li>
+            <li><a href="./contato.html" role="menuitem">Contato</a></li>
           </ul>
         </nav>
-        <nav id="mobile-main">
+        <nav id="mobile-main" role="navigation" aria-level="main navigation">
           <div id="menu-toggle">
             <input type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
-            <ul id="mobile-main-content">
-              <li><a href="./cursos.html">Cursos</a></li>
-              <li><a href="./blog.html">Blog</a></li>
-              <li><a href="./contato.html">Contato</a></li>
+            <ul id="mobile-main-content" role="menu">
+              <li><a href="./cursos.html" role="menuitem">Cursos</a></li>
+              <li><a href="./blog.html" role="menuitem">Blog</a></li>
+              <li><a href="./contato.html" role="menuitem">Contato</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-    <main>
+    <main role="main">
       <section class="title-header">
         <div class="centralize-container">
           <div class="flexbox-header">
@@ -63,7 +68,9 @@
               <h1>Educação Financeira é tudo de bom</h1>
               <p>Vem comigo que te mostro por onde começar</p>
               <div class="first-button">
-                <a href="./cursos.html">quero saber mais</a>
+                <a href="./cursos.html" aria-label="Acesse nossos cursos"
+                  >quero saber mais</a
+                >
               </div>
             </div>
             <div class="img-header">
@@ -71,6 +78,7 @@
                 src="./img/ilustra-banner.png"
                 alt="imagem ilustra banner"
                 class="header-img"
+                title="imagem ilustra banner"
               />
             </div>
           </div>
@@ -92,7 +100,11 @@
                   se cillum dolore eu fugiat nulla pariatur.
                 </p>
                 <div class="start-button">
-                  <a href="./curso.html">começar agora</a>
+                  <a
+                    href="./curso.html"
+                    aria-label="Acesse nosso curso de Investimento para iniciantes"
+                    >começar agora</a
+                  >
                 </div>
               </div>
               <div class="img-services">
@@ -107,7 +119,11 @@
                   se cillum dolore eu fugiat nulla pariatur.
                 </p>
                 <div class="start-button">
-                  <a href="./curso.html">começar agora</a>
+                  <a
+                    href="./curso.html"
+                    aria-label="Acesse nosso curso Poupando e Rendendo"
+                    >começar agora</a
+                  >
                 </div>
               </div>
               <div class="img-services">
@@ -122,7 +138,11 @@
                   se cillum dolore eu fugiat nulla pariatur.
                 </p>
                 <div class="start-button">
-                  <a href="./curso.html">começar agora</a>
+                  <a
+                    href="./curso.html"
+                    aria-label="Acesse nosso curso Independência Financeira"
+                    >começar agora</a
+                  >
                 </div>
               </div>
             </div>
@@ -184,8 +204,12 @@
         <div class="grey-container">
           <div class="centralize-container">
             <h3>
-              <a href="./blog.html" class="link-h3-blog">
-                Mais Conteudo para você
+              <a
+                href="./blog.html"
+                class="link-h3-blog"
+                aria-label="Acesse mais conteúdo"
+              >
+                Mais Conteúdo para você
               </a>
             </h3>
             <div class="flexbox-additional">
@@ -229,7 +253,9 @@
             </div>
             <div class="link-posts">
               <div class="posts">
-                <a href="./post.html">ver todos os posts</a>
+                <a href="./post.html" aria-label="Acesse nossos posts"
+                  >ver todos os posts</a
+                >
               </div>
             </div>
           </div>
@@ -237,23 +263,31 @@
       </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <div class="logo-footer">
         <img src="./img/logo-footer.png" alt="" />
       </div>
-      <div class="menu-footer">
-        <ul class="menu-footer1">
-          <li><a href="./cursos.html">Cursos</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contato.html">Contato</a></li>
+      <nav class="menu-footer" role="navigation">
+        <ul class="menu-footer1" role="menu">
+          <li><a href="./cursos.html" role="menuitem">Cursos</a></li>
+          <li><a href="./blog.html" role="menuitem">Blog</a></li>
+          <li><a href="./contato.html" role="menuitem">Contato</a></li>
         </ul>
-      </div>
+      </nav>
       <div class="links-footer">
         <div class="txt-footer">
-          <a href="./contato.html">quero ser prof</a>
+          <a
+            href="./contato.html"
+            aria-label="Quer ser nosso professor? - Entre em contato conosco"
+            >quero ser prof</a
+          >
         </div>
         <div class="txt-footer">
-          <a href="./contato.html">aqui tem outro link</a>
+          <a
+            href="./contato.html"
+            aria-label="Aqui tem outro link - Entre em contato conosco"
+            >aqui tem outro link</a
+          >
         </div>
       </div>
     </footer>

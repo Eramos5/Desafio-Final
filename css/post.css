@@ -163,7 +163,6 @@ header {
 .centralize-container {
   width: 80%;
   margin: 0 auto;
-  border: 1px solid orangered;
 }
 
 /*Section Post */
@@ -194,7 +193,6 @@ header {
 
 .post-text {
   margin-bottom: 100px;
-  border: 1px solid violet;
 }
 
 .post-text h4 {
@@ -202,13 +200,11 @@ header {
   color: hsla(171, 39%, 42%, 1);
   margin-top: 30px;
   margin-bottom: 10px;
-  border: 1px solid greenyellow;
 }
 
 .post-text p {
   font: 300 13px 'Ubuntu', sans-serif;
   color: hsla(0, 0%, 0%, 1);
-  border: 1px solid blue;
 }
 
 .services-post-h2 {
@@ -242,6 +238,7 @@ header {
   font: 700 23px 'Ubuntu', sans-serif;
   margin-top: 10px;
   margin-bottom: 23px;
+  text-align: center;
 }
 
 .img-post p {
@@ -328,9 +325,6 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  /*body {
-    background-color: coral;
-  }*/
   /*Menu*/
   #desktop-main {
     display: none;
@@ -347,9 +341,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  body {
-    background-color: cornflowerblue;
-  }
   /*Menu*/
   #mobile-main {
     display: none;
@@ -388,9 +379,6 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-  body {
-    background-color: burlywood;
-  }
   /*Menu*/
   #mobile-main {
     display: none;
@@ -400,12 +388,6 @@ footer {
   .flexbox-post-service {
     display: flex;
   }
-
-  /*#post .post centralize-container {
-    padding: 10%;
-    border: 10px tomato;
-  }*/
-
   .post-text {
     width: 100%; /*anterior 92%*/
     margin-bottom: 100px;

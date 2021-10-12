@@ -239,6 +239,7 @@ header {
 .img-services .h2-services {
   color: hsla(340, 100%, 63%, 1);
   font: 700 23px 'Ubuntu', sans-serif;
+  text-align: center;
   margin-top: 10px;
   margin-bottom: 23px;
 }
@@ -426,9 +427,6 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  /*body {
-    background-color: coral;
-  }*/
   /*Menu*/
   #desktop-main {
     display: none;
@@ -511,9 +509,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /*body {
-    background-color: cornflowerblue;
-  }*/
   /*Menu*/
   #mobile-main {
     display: none;
@@ -635,9 +630,6 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-  /*body {
-    background-color: burlywood;
-  }*/
   /*Menu*/
   #mobile-main {
     display: none;
@@ -656,7 +648,6 @@ footer {
   }
   .title-header {
     padding-top: 5%;
-    /* text-align: left; */
   }
   .title {
     display: flex;

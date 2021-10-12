@@ -28,35 +28,40 @@
   </head>
 
   <body>
-    <header class="header-position">
+    <header class="header-position" role="banner">
       <div class="navbar-content">
         <a href="./index.html">
           <img src="./img/logo-header.png" alt="logotipo dindin" />
         </a>
-        <nav class="button-content" id="desktop-main">
-          <ul class="menu-nav">
-            <li><a href="./cursos.html">Cursos</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contato.html">Contato</a></li>
+        <nav
+          class="button-content"
+          id="desktop-main"
+          role="navigation"
+          aria-level="main navigation"
+        >
+          <ul class="menu-nav" role="menu">
+            <li><a href="./cursos.html" role="menuitem">Cursos</a></li>
+            <li><a href="./blog.html" role="menuitem">Blog</a></li>
+            <li><a href="./contato.html" role="menuitem">Contato</a></li>
           </ul>
         </nav>
-        <nav id="mobile-main">
+        <nav id="mobile-main" role="navigation" aria-level="main navigation">
           <div id="menu-toggle">
             <input type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
-            <ul id="mobile-main-content">
-              <li><a href="./cursos.html">Cursos</a></li>
-              <li><a href="./blog.html">Blog</a></li>
-              <li><a href="./contato.html">Contato</a></li>
+            <ul id="mobile-main-content" role="menu">
+              <li><a href="./cursos.html" role="menuitem">Cursos</a></li>
+              <li><a href="./blog.html" role="menuitem">Blog</a></li>
+              <li><a href="./contato.html" role="menuitem">Contato</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-    <main>
-      <section id="post">
+    <main role="main">
+      <section>
         <div class="post centralize-container">
           <h2 class="post-h2">On the other hand, we denounce</h2>
           <div class="data">27 de dezembro de 2020</div>
@@ -155,7 +160,10 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit es
                     se cillum dolore eu fugiat nulla pariatur.
                   </p>
-                  <div class="start-button-post">
+                  <div
+                    class="start-button-post"
+                    aria-label="Acesse nosso curso de Investimento para iniciantes"
+                  >
                     <a href="./curso.html">começar agora</a>
                   </div>
                 </div>
@@ -172,7 +180,11 @@
                     se cillum dolore eu fugiat nulla pariatur.
                   </p>
                   <div class="start-button-post">
-                    <a href="./curso.html">começar agora</a>
+                    <a
+                      href="./curso.html"
+                      aria-label="Acesse nosso curso Poupando e Rendendo"
+                      >começar agora</a
+                    >
                   </div>
                 </div>
 
@@ -188,7 +200,11 @@
                     se cillum dolore eu fugiat nulla pariatur.
                   </p>
                   <div class="start-button-post">
-                    <a href="./curso.html">começar agora</a>
+                    <a
+                      href="./curso.html"
+                      aria-label="Acesse nosso curso Independência Financeira"
+                      >começar agora</a
+                    >
                   </div>
                 </div>
               </div>
@@ -197,23 +213,31 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <div class="logo-footer">
         <img src="./img/logo-footer.png" alt="logotipo dindin" />
       </div>
-      <div class="menu-footer">
-        <ul class="menu-footer1">
-          <li><a href="./cursos.html">Cursos</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contato.html">Contato</a></li>
+      <nav class="menu-footer" role="navigation">
+        <ul class="menu-footer1" role="menu">
+          <li><a href="./cursos.html" role="menuitem">Cursos</a></li>
+          <li><a href="./blog.html" role="menuitem">Blog</a></li>
+          <li><a href="./contato.html" role="menuitem">Contato</a></li>
         </ul>
-      </div>
+      </nav>
       <div class="links-footer">
         <div class="txt-footer">
-          <a href="./contato.html">quero ser prof</a>
+          <a
+            href="./contato.html"
+            aria-label="Quer ser nosso professor? - Entre em contato conosco"
+            >quero ser prof</a
+          >
         </div>
         <div class="txt-footer">
-          <a href="./contato.html">aqui tem outro link</a>
+          <a
+            href="./contato.html"
+            aria-label="Aqui tem outro link - Entre em contato conosco"
+            >aqui tem outro link</a
+          >
         </div>
       </div>
     </footer>

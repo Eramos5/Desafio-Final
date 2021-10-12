@@ -309,12 +309,13 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  /*body {
-    background-color: coral;
-  }*/
   /*Menu*/
   #desktop-main {
     display: none;
+  }
+
+  .forms {
+    margin-top: 30px;
   }
 
   /* Section contato*/
@@ -329,9 +330,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /*body {
-    background-color: cornflowerblue;
-  }*/
   /*Menu*/
   #mobile-main {
     display: none;
