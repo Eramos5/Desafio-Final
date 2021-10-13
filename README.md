@@ -1,7 +1,7 @@
 # Desafio-Final
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/92177131/137020306-72b8ab45-c339-4845-95aa-08dc872acab3.png"/>
+  <img src="https://avatars.githubusercontent.com/u/92177131?v=4"/>
 </p>
 
 
