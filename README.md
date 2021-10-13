@@ -15,5 +15,5 @@ As páginas podem ser conferidas no endereço: https://eramos5.github.io/Desafio
 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/92177131/137020892-2a64ba85-b4bc-4942-8c97-f7b5a2ce571b.png"/>
+  <img src="https://raw.githubusercontent.com/Eramos5/Desafio-Final/main/MER.png"/>
 </p>
